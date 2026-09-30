@@ -1,0 +1,57 @@
+# Trade - chizzar-dev
+# https://github.com/chizzar-dev/Trade
+
+# Takas istegi kac saniye sonra zaman asimina ugrar
+request-timeout: 60
+
+# Takas icin gereken en fazla uzaklik (blok, 0 = sinirsiz)
+max-distance: 0
+
+# Iki taraf da onayladiktan sonra beklenecek sure (tick).
+# Bu sirada teklif degistirilemez; son an degistirme scam'ini onler.
+# 20 tick = 1 saniye. 0 yaparsan aninda tamamlanir.
+confirm-delay-ticks: 20
+
+# Takasa konulamayacak esyalar (materyal adi)
+blacklist: []
+
+# Tamamlanan takaslar konsola yazilsin mi
+log-trades: true
+
+gui:
+  title: "&8Takas &7- &f%player%"
+  filler: "GRAY_STAINED_GLASS_PANE"
+
+messages:
+  players-only: "&cBu komut yalnizca oyuncular icindir."
+  no-permission: "&cBunun icin yetkin yok."
+  usage: "&7/trade <oyuncu>  &8|  &7/trade kabul  &8|  &7/trade ret  &8|  &7/trade iptal"
+  player-not-found: "&cOyuncu bulunamadi ya da cevrimdisi."
+  self: "&cKendinle takas yapamazsin."
+  busy-you: "&cZaten bir takastasin."
+  busy-target: "&cO oyuncu su an mesgul."
+  too-far: "&cO oyuncu cok uzakta."
+  request-sent: "&a%player% &7oyuncusuna takas istegi gonderildi."
+  request-received: "&e%player% &7seninle takas etmek istiyor. &a/trade kabul &7| &c/trade ret"
+  no-request: "&cBekleyen bir takas istegin yok."
+  denied-you: "&7Istegi reddettin."
+  denied-other: "&c%player% &7takas istegini reddetti."
+  cancelled-out: "&7Takas istegin iptal edildi."
+  opened: "&aTakas basladi."
+  full: "&cTakas alanin dolu (en fazla 16 esya)."
+  blacklisted: "&cBu esya takas edilemez."
+  cancelled: "&cTakas iptal edildi, esyalar geri verildi."
+  success: "&aTakas tamamlandi!"
+  expired: "&7Takas istegi zaman asimina ugradi."
+  pending-delivered: "&aBekleyen takas esyalarin envanterine eklendi."
+
+  # GUI dugme yazilari
+  gui:
+    ready-yes: "&a&lHAZIRSIN"
+    ready-yes-lore: "&7Vazgecmek icin tekrar tikla"
+    ready-no: "&c&lHAZIR DEGILSIN"
+    ready-no-lore: "&7Onaylamak icin tikla"
+    other-ready: "&aKarsi taraf hazir"
+    other-waiting: "&cKarsi taraf bekliyor..."
+    cancel: "&c&lIPTAL"
+    cancel-lore: "&7Takasi iptal et"
