@@ -3,7 +3,6 @@ version: ${project.version}
 main: com.metox.trade.TradePlugin
 api-version: 1.13
 author: chizzar-dev
-website: https://discord.gg/forges
 description: Guvenli oyuncular arasi takas (dupe ve scam korumali).
 
 commands:
